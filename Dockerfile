@@ -9,7 +9,9 @@ RUN git clone https://github.com/Ankit-Kum/New_CDAC.git
 
 COPY . . 
 
-COPY /New_CADC/index.html /var/www/html/index.html
+WORKDIR /NEW_CDAC 
+
+COPY index.html /var/www/html/index.html
 
 EXPOSE 80
 
