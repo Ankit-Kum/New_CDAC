@@ -2,9 +2,14 @@ FROM ubuntu:22.04
 
 RUN apt-get update
 RUN apt-get install -y apache2 
+RUN apt install git -y
+
+RUN git clone https://github.com/Ankit-Kum/New_CDAC.git
 
 
-COPY index.html /var/www/html/index.html
+COPY . . 
+
+COPY /New_CADC/index.html /var/www/html/index.html
 
 EXPOSE 80
 
