@@ -4,7 +4,7 @@ RUN apt-get update
 RUN apt-get install -y apache2 
 RUN apt install git -y
 
-RUN git clone https://github.com/Ankit-Kum/New_CDAC.git
+RUN git clone https://github.com/Ankit-Kum/New_CDAC.git /New_CDAC
 
 
 COPY . . 
